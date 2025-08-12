@@ -7,7 +7,7 @@ $db = "crud_exemplo";
 
 $conn = new mysql($host, $user, $password, $db);
 
-if (!$conn) {
+if ($conn->connect_error) {
     echo "Falha na conexão!";
 }
 ?>
