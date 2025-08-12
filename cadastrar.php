@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 $conn->close()
 ?>
 
-<form method="POST">
+<form method="POST" action="cadastrar.php">
     Nome: <input type="text" name="nome"><br>
     Email: <input type="email" name="email"><br>
     <input type="submit" value="Cadastrar">
