@@ -7,9 +7,9 @@ $sql = "SELECT * FROM usuarios WHERE id = $id";
 $res = mysqli_query($conn, $sql);
 $dado = mysqli_fetch_assoc($res);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
 
     $sql = "UPDATE usuarios SET nome='$nome', email='$email' WHERE id=$id";
     mysqli_query($conn, $sql);
