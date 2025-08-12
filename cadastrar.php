@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     else
         echo "Erro ao cadastrar!";
 }
-
+$conn->close()
 ?>
 
 <form method="POST">
