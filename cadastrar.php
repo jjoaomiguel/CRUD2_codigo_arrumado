@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
     $sql = "INSERT INTO usuarios (nome, email) VALUES ('$nome', '$email')";
     $res = mysqli_query($conn, $sql);
-    if ($res) {
+    if ($conn->query($sql) === true) {
         echo "Usuário cadastrado com sucesso!";
     else
         echo "Erro ao cadastrar!";
